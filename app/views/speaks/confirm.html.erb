@@ -1,0 +1,21 @@
+<div class = "confirm">
+  <br>
+  <h3 class = "confirm_title">
+    内容の確認
+  </h3>
+  <div class = "confirm_content">
+  <%= form_with(model:@speak, local: true) do |form| %>
+    <%= form.hidden_field :content %>
+    <p1 class = "b_break"><%= @speak.content %></p1>
+  </div>
+  <br>
+  <%= form.submit value = "SPEAK", class:"btn" %>
+  <% end %>
+  
+  <br>
+<%= form_with(model: @speak, url: new_speak_path, local: true, method: "get") do |form| %>
+<%= form.hidden_field :content %>
+<br>
+<%= form.submit value = "戻る", name: "back", class:"btn" %>
+<% end %>
+</div>

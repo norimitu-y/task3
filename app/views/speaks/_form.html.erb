@@ -1,0 +1,20 @@
+<div class = "_form">  
+  <%= form_with(model:@speak, local: true, url: choose_new_or_edit) do |form| %>
+    <% if @speak.errors.any? %>
+      <p><%= @speak.errors.count %>件の入力ミスがあります</p>
+      <ul>
+        <% @speak.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>  
+      </ul>
+    <% end %>
+    
+    <div class = "speak_area">
+      <%= form.text_area :content, size:"50*7", class:"text_area" %>
+    </div>
+    <br>
+    <%= form.submit value = "SPEAK", class:"btn" %>
+  <% end %>
+</div>
+<br>
+<%= button_to "HOME", speaks_path, {method: :get, class: 'btn'} %>

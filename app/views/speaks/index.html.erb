@@ -1,0 +1,22 @@
+<div class = "index clearfix">
+   <aside class = "side_menu">
+    <p><%= button_to "SPEAK", new_speak_path, {method: :get, class: 'btn'} %></p>
+    <p><%= button_to "HOME", speaks_path, {method: :get, class: 'btn'} %></p>
+    <div class="side_box">
+      <span class="box-title">お知らせ</span>
+      <p><%= notice %></p>
+    </div>
+  </aside>
+  <article class = "content">
+    <% @speaks.reverse_each do |speak| %>
+      <div class = "speak_index">
+        <p1 class = "b_break"><%= speak.content %></p1>
+        <div class ="flex">
+          <p><%= button_to "詳細", speak_path(speak.id), {method: :get, class: 'menu_btn'} %></p>
+          <p><%= button_to "編集", edit_speak_path(speak.id), {method: :get, class: 'menu_btn'} %></p>
+          <p><%= button_to "削除", speak_path(speak.id), {method: :delete, class: 'menu_btn'} %></p>
+        </div>  
+      </div>  
+    <% end %>
+  </article>
+</div>

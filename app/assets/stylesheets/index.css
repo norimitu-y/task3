@@ -1,0 +1,114 @@
+
+.content {
+    float: left;
+    width: 63%;
+    height: 800px;
+    overflow: scroll;
+}
+
+.speak_index {
+    font-family: "游ゴシック体",YuGothic;
+    font-size: 18px;
+    background-color: white;
+    padding: 25px 10px 1px 10px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 1px #67c5ff;
+    border-radius: 20px;
+    transition: .4s;
+    width: 95px;
+    height: 35px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+.menu_btn {
+  color: #67c5ff;
+  width: 40px;
+  height: 40px;
+  line-height: 37px;
+  border-radius: 50%;
+  border: solid 1px #67c5ff;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  font-weight: bold;
+  transition: .4s;
+  font-size: 5px;
+}
+
+.menu_btn:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+.side_menu {
+    float: left;
+    width: 35%;
+    height: 300px;
+    background-color: white;
+    margin-right: 1.5%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.flex p {
+    margin-right: 10px;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.side_box {
+    position: relative;
+    margin: 50px auto;
+    
+    border: solid 1px #95ccff;
+    border-radius: 8px;
+    height: 80px;
+    width: 75%;
+}
+
+.side_box .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 17px;
+    background: #FFF;
+    color: #95ccff;
+}
+
+.side_box p {
+    text-align: center;
+}
+
+p1 {
+    width: 380px;
+}
+
+.b_break {
+    word-break: break-all;
+}
